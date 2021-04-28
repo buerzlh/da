@@ -1,0 +1,80 @@
+#DATALOADER:
+#  NUM_WORKERS: 4
+#  TRAIN_S:
+#    SAMPLER: 'RandomDomainSampler'
+#    BATCH_SIZE: 64
+#  TRAIN_T:
+#    SAME_AS_S: False
+#    BATCH_SIZE: 32
+#  TEST:
+#    BATCH_SIZE: 64
+#
+#OPTIM:
+#  NAME: 'sgd'
+#  LR: 0.001
+#  MAX_EPOCH: 50
+#  LR_SCHEDULER: 'cosine'
+#
+#TRAIN:
+#  COUNT_ITER: 'bigger_one'
+#
+#TRAINER:
+#  MSDTR:
+#    HIDDEN: [1024, 778]
+#    DIS_SIZE: 1024
+#    RECONSTRUCTION: 5
+#    cls_d: 0.1
+#    adv_begin: 0
+#    mask_b: 0.4
+#    mask_k: 6
+#    g: 0.001
+#    lr_muti_g: 0.0
+#    lr_muti_ddi: 0.0
+#    lr_muti_cdi: 0.0
+#    lr_muti_dds: 0.0
+#    lr_muti_cds: 0.0
+#    lr_muti_r: 10.0
+#    lr_muti_dis: 10.0
+#
+#    result: 97.48, 98.62, 98.11
+#
+DATALOADER:
+  NUM_WORKERS: 4
+  TRAIN_S:
+    SAMPLER: 'RandomDomainSampler'
+    BATCH_SIZE: 64
+  TRAIN_T:
+    SAME_AS_S: False
+    BATCH_SIZE: 32
+  TEST:
+    BATCH_SIZE: 64
+
+OPTIM:
+  NAME: 'sgd'
+  LR: 0.001
+  MAX_EPOCH: 50
+  LR_SCHEDULER: 'cosine'
+
+TRAIN:
+  COUNT_ITER: 'bigger_one'
+
+TRAINER:
+  MSDTR:
+    HIDDEN: [1024, 778]
+    DIS_SIZE: 1024
+    RECONSTRUCTION: 5
+    cls_d: 0.5
+    adv_begin: 0
+    mask_b: 0.4
+    mask_k: 3
+    g: 0.001
+    lr_muti_g: 0.0
+    lr_muti_ddi: 0.0
+    lr_muti_cdi: 0.0
+    lr_muti_dds: 0.0
+    lr_muti_cds: 0.0
+    lr_muti_r: 10.0
+    lr_muti_dis: 10.0
+
+
+
