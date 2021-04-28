@@ -1,5 +1,5 @@
 # da
-PyTorch implementation for **Prototype-Based Multisource Domain Adaptation** (TNNLS2021). This repository is based on framework from [dassl](https://github.com/KaiyangZhou/Dassl.pytorch) modified part of the code. 
+PyTorch implementation for **Prototype-Based Multisource Domain Adaptation** (TNNLS2021). This repository is based on framework from [dassl](https://github.com/KaiyangZhou/Dassl.pytorch) and modified part of the code. 
 
 The installation can refer to dassl.
 
